@@ -1,0 +1,54 @@
+* {
+    background-color: black;
+    color: white;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+#description {
+    display: inline-block;
+}
+
+.project-card {
+    border: 2px solid white;
+}
+
+.sveltekit-label {
+    background-color: orangered;
+}
+
+.tailwind-label {
+    background-color: lightskyblue;
+}
+
+.python-label {
+    background-color: goldenrod;
+}
+
+.pygame-label {
+    background-color: orange;
+}
+
+.stow-label {
+    background-color: grey;
+}
+
+.shell-label {
+    background-color: greenyellow;
+}
+
+.react-label {
+    background-color: aqua;
+}
+
+.javascript-label {
+    background-color: yellow;
+}
+
+.threejs-label {
+    background-color: darkcyan;
+}
