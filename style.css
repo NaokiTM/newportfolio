@@ -1,54 +1,142 @@
 * {
-    background-color: black;
-    color: white;
+    background-color: #faf1d2;
+    color: black;
+    font-size: 20px;
+}
+
+#title {
+    font-size: xx-large;
+    font-weight: 600;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+#title-container {
+    display: flex;
+    justify-content: center;
 }
 
 #projects {
     display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    gap: 50px;
 }
 
 #description {
     display: inline-block;
+    padding: 50px;;
+}
+
+.link {
+    font-weight: 500;
 }
 
 .project-card {
-    border: 2px solid white;
+    aspect-ratio: 1 / 1;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05); 
+}
+
+.project-card-container {
+    padding: 40px;
+    border-radius: 50px;
+}
+
+.project-card-title {
+    font-weight: 600;
+}
+
+.project-card-technologies {
+    display: flex;
+    gap: 5px;
+}
+
+.project-card-description {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .sveltekit-label {
     background-color: orangered;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
 }
 
 .tailwind-label {
     background-color: lightskyblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border:1px solid black;
 }
 
 .python-label {
     background-color: goldenrod;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
 }
 
 .pygame-label {
     background-color: orange;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
 }
 
 .stow-label {
     background-color: grey;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
 }
 
 .shell-label {
     background-color: greenyellow;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
 }
 
 .react-label {
     background-color: aqua;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
 }
 
 .javascript-label {
     background-color: yellow;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
 }
 
 .threejs-label {
     background-color: darkcyan;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.jost-normal {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }

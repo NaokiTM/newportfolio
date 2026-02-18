@@ -4,65 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <title>website</title>
 </head>
-<body>
+<body class="jost-normal">
     <!-- title -->
-    <title></title>
+     <div id="title-container">
+        <h1 id="title">Website</h1>
+     </div>
+
 
     <!-- Description -->
     <div id="description">
-        <div>Computer science & AI student.  </div>
-        <a href="https://github.com/NaokiTM">My Github</a>
+        <div style="display: inline-block;">Computer science & AI student, interested in machine learning techniques and creating interesting dynamic web apps, and would like opportunities to find an intersection between them. Click on the highlighted links for <a href="https://github.com/NaokiTM" class="link">my Github</a> and my <a href = "https://www.linkedin.com/in/naoki-miyagawa-1234b8333/" class="link">LinkedIn</a></div>
     </div>
 
     <!-- Projects -->
     <div id="projects">
         <div class="project-card">
-            <div class="project-card-title">Synthasonik</div>
-            <div class="project-card-description">A web DAW interface</div>
-            <div class="project-card-technologies">
-                <div class="sveltekit-label">SvelteKit</div>
-                <div class="tailwind-label">Tailwind</div>
+            <div class="project-card-container">
+                <div class="project-card-title">Synthasonik</div>
+                <div class="project-card-description">A web DAW interface</div>
+                <div class="project-card-technologies">
+                    <div class="sveltekit-label">SvelteKit</div>
+                    <div class="tailwind-label">Tailwind</div>
+                </div>
             </div>
         </div>
         <div class="project-card">
-            <div class="project-card-title">knights tour solver</div>
-            <div class="project-card-description">A program to visually solve the knights tour, showing possible moves from the knights position and highlighting previous moves. </div>
-            <div class="project-card-technologies">
-                <div class="python-label">Python</div>
-                <div class="pygame-label">Pygame</div>
+            <div class="project-card-container">
+                <div class="project-card-title">knights tour solver</div>
+                <div class="project-card-description">A program to visually solve the knights tour, showing possible moves from the knights position and highlighting previous moves. </div>
+                <div class="project-card-technologies">
+                    <div class="python-label">Python</div>
+                    <div class="pygame-label">Pygame</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="project-card">
+            <div class="project-card-container">
+                <div class="project-card-title">Linux Dotfiles</div>
+                <div class="project-card-description">My linux dotfiles. I use Stow for symlinking, instructions for installation are in the README</div>
+                <div class="project-card-technologies">
+                    <div class="stow-label">Stow</div>
+                    <div class="shell-label">Shell</div>
+                </div>
             </div>
         </div>
         <div class="project-card">
-            <div class="project-card-title">Linux Dotfiles</div>
-            <div class="project-card-description">My linux dotfiles. I use Stow for symlinking, instructions for installation are in the README</div>
-            <div class="project-card-technologies">
-                <div class="stow-label">Stow</div>
-                <div class="shell-label">Shell</div>
+            <div class="project-card-container">
+                <div class="project-card-title">Tycoon</div>
+                <div class="project-card-description">An idle webgame</div>
+                <div class="project-card-technologies">
+                    <div class="react-label">React</div>
+                    <div class="tailwind-label">Tailwind</div>
+                </div>
             </div>
         </div>
         <div class="project-card">
-            <div class="project-card-title">Tycoon</div>
-            <div class="project-card-description">An idle webgame</div>
-            <div class="project-card-technologies">
-                <div class="react-label">React</div>
-                <div class="tailwind-label">Tailwind</div>
+            <div class="project-card-container">
+                <div class="project-card-title">Perfume site webcrawler</div>
+                <div class="project-card-description">Scrapes a perfume site for names and prices (currently non functioning)</div>
+                <div class="project-card-technologies">
+                    <div class="javascript-label">Javascript</div>
+                </div>
             </div>
         </div>
         <div class="project-card">
-            <div class="project-card-title">Perfume site webcrawler</div>
-            <div class="project-card-description">Scrapes a perfume site for names and prices (currently non functioning)</div>
-            <div class="project-card-technologies">
-                <div class="javascript-label">Javascript</div>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-card-title">newsearth</div>
-            <div class="project-card-description">A website that allows the user to click on regions around the world to see news headlines from that region. inspired by the github globe</div>
-            <div class="project-card-technologies">
-                <div class="javascript-label">Javascript</div>
-                <div class="threejs-label">ThreeJS</div>
+            <div class="project-card-container">
+                <div class="project-card-title">newsearth</div>
+                <div class="project-card-description">A website that allows the user to click on regions around the world to see news headlines from that region. inspired by the github globe</div>
+                <div class="project-card-technologies">
+                    <div class="javascript-label">Javascript</div>
+                    <div class="threejs-label">ThreeJS</div>
+                </div>
             </div>
         </div>    
     </div>
