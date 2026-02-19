@@ -1,7 +1,25 @@
 * {
-    background-color: #faf1d2;
+    background-size: 400% 400%;
     color: black;
     font-size: 20px;
+}
+
+body {
+    background: linear-gradient(-45deg,#c693ff, #f8f2ff);
+    background-size: 150%;
+    animation: moveGradient 10s ease infinite;
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 #title {
@@ -9,6 +27,7 @@
     font-weight: 600;
     padding-top: 50px;
     padding-left: 50px;
+    padding-right: 50px;
 }
 
 #title-container {
@@ -25,7 +44,7 @@
 
 #description {
     display: inline-block;
-    padding: 50px;;
+    padding: 50px;
 }
 
 .link {
@@ -119,7 +138,7 @@
 }
 
 .javascript-label {
-    background-color: yellow;
+    background-color: #f5e042;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 20px;
@@ -136,6 +155,19 @@
 
 .jost-normal {
   font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bruno-ace-sc-regular {
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.syne-normal {
+  font-family: "Syne", sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
