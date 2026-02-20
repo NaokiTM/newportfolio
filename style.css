@@ -5,12 +5,15 @@
 }
 
 body {
-    background: linear-gradient(-45deg,#c693ff, #f8f2ff);
+    background: linear-gradient(-45deg,#7bb0ff, #f8f2ff);
     background-size: 150%;
-    animation: moveGradient 10s ease infinite;
+    animation: moveGradient1 5s ease infinite;
+    background-size: cover; /* Makes the gradient cover the entire screen */
+    background-repeat: no-repeat; /* Prevents the gradient from repeating */
+    background-attachment: fixed; /* Keeps the gradient fixed while scrolling */
 }
 
-@keyframes moveGradient {
+@keyframes moveGradient1 {
     0% {
         background-position: 0% 50%;
     }
@@ -23,16 +26,44 @@ body {
 }
 
 #title {
-    font-size: xx-large;
-    font-weight: 600;
     padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    transform: scale(0.67)
+
 }
 
 #title-container {
     display: flex;
     justify-content: center;
+}
+
+#title-decoration-container {
+    display: flex;
+     transform: translate(0px);
+     padding-left: 50px;
+     padding-right: 50px;
+     padding-bottom: 50px;
+}
+
+#title-decoration{
+  height: 30px;
+  width: 100vw;
+  color: white;
+  padding: 5px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #000,
+    #000 20px,
+    #7bb0ff00 20px,
+    #7bb0ff00 40px
+  );
+    background-size: 56px 56px; /* √2 × 40px — forces clean tiling */
+  border: 1px solid black;
+  animation: moveGradient2 1s linear infinite;
+}
+
+@keyframes moveGradient2 {
+  0%   { background-position: 0 0; }
+  100% { background-position: 56px 0; } /* shift by exactly one tile */
 }
 
 #projects {
@@ -44,7 +75,9 @@ body {
 
 #description {
     display: inline-block;
-    padding: 50px;
+    /* padding: 50px; */
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .link {
@@ -172,3 +205,10 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+.monomaniac-one-regular {
+  font-family: "Monomaniac One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
