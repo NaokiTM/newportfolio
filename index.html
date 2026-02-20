@@ -17,34 +17,31 @@
 <body class="syne-normal">
     <!-- title -->
      <div id="title-container">
-        <img id="title" src="https://see.fontimg.com/api/rf5/BLLld/YzM1ZjAyNDUxZGFkNDFkMzk4ODc0NDE2YzE5MjQ1YzUudHRm/TmFva2kgTWl5YWdhd2E/sterion.png?r=fs&h=65&w=1000&fg=000000&bg=FFFFFF&tb=1&s=65" alt="Space fonts">
+        <h1 id="title"> Naoki Miyagawa </h1>
      </div>
-     <!-- title decoration -->
-     <div id="title-decoration-container">
-        <div id="title-decoration"></div>
-     </div>
+
 
     <!-- Description -->
     <div id="description">
-        <div style="display: inline-block;">Computer science & AI student, interested in machine learning techniques and creating interesting dynamic web apps, and would like opportunities to find an intersection between them. I also love tinkering with my linux setup and playing guitar Click on the highlighted links for <a href="https://github.com/NaokiTM" class="link">my Github</a> and my <a href = "https://www.linkedin.com/in/naoki-miyagawa-1234b8333/" class="link">LinkedIn</a>, or email me at <div class="link" style="display: inline-block;">naokimiyagawa05@gmail.com</div>. Download my resume <a href="CV.pdf" class="link">here</a></div>
+        <div style="display: inline-block;">Computer science & AI student, interested in machine learning techniques and creating interesting dynamic web apps, and would like opportunities to find an intersection between them. I also love tinkering with my linux setup and playing guitar. Click on the highlighted links for <a href="https://github.com/NaokiTM" class="link">my Github</a> and my <a href = "https://www.linkedin.com/in/naoki-miyagawa-1234b8333/" class="link">LinkedIn</a>, or email me at <div class="link" style="display: inline-block;">naokimiyagawa05@gmail.com</div>. Download my resume <a href="CV.pdf" class="link">here</a></div>
     </div>
 
     <!-- Projects -->
     <div id="projects">
-        <div class="project-card">
+        <div class="project-card" style="--background-image: url('/projectimages/daw.png')">
             <div class="project-card-container">
                 <div class="project-card-title">Synthasonik</div>
-                <div class="project-card-description">A web DAW interface</div>
+                <div class="project-card-description">A DAW web app to fill the position of a web based but still minimalistic workstation, inspired by the interface of logic pro x by apple. Allows importing your own samples and playback of multiple tracks thanks to the audioContext interface. I use svelte stores for global variables and svelte writable for dynamic variables, and styling with TailwindCSS to simplify rapid development of a complex user interface. </div>
                 <div class="project-card-technologies">
                     <div class="sveltekit-label">SvelteKit</div>
                     <div class="tailwind-label">Tailwind</div>
                 </div>
             </div>
         </div>
-        <div class="project-card">
+        <div class="project-card" style="--background-image: url('/projectimages/chess.png')">
             <div class="project-card-container">
                 <div class="project-card-title">knights tour solver</div>
-                <div class="project-card-description">A program to visually solve the knights tour, showing possible moves from the knights position and highlighting previous moves. </div>
+                <div class="project-card-description">A program to visually solve the famous Knights Tour problem, showing possible moves from the knights position and highlighting previous moves. it implements the Warnsdorffs heuristic to look ahead and greedily choose the move with the largest number of possible outgoing moves from it. Pygame provides a simple and customizable user interface, and in the future I plan to add a mode for the user to be able to solve it themselves as well as solving for custom board sizes</div>
                 <div class="project-card-technologies">
                     <div class="python-label">Python</div>
                     <div class="pygame-label">Pygame</div>
@@ -52,17 +49,17 @@
             </div>
 
         </div>
-        <div class="project-card">
+        <div class="project-card" style="--background-image: url('/projectimages/')">
             <div class="project-card-container">
                 <div class="project-card-title">Linux Dotfiles</div>
-                <div class="project-card-description">My linux dotfiles. I use Stow for symlinking, instructions for installation are in the README</div>
+                <div class="project-card-description">My linux dotfiles for my current setup (which changes frequently), but as of creating this website is based on Arch linux, hyprland, Stow for symlinking, and instructions for installation can be found in the README.md file</div>
                 <div class="project-card-technologies">
                     <div class="stow-label">Stow</div>
                     <div class="shell-label">Shell</div>
                 </div>
             </div>
         </div>
-        <div class="project-card">
+        <div class="project-card" style="--background-image: url('/projectimages/game.png')">
             <div class="project-card-container">
                 <div class="project-card-title">Tycoon</div>
                 <div class="project-card-description">An idle webgame</div>
@@ -72,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <div class="project-card">
+        <div class="project-card" style="--background-image: url('/projectimages/typing.png')">
             <div class="project-card-container">
                 <div class="project-card-title">Typetestr</div>
                 <div class="project-card-description">Typing game based on the mechanics of monkeytype where prompts and typed characters are displayed in place </div>

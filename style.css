@@ -1,6 +1,5 @@
 * {
     background-size: 400% 400%;
-    color: black;
     font-size: 20px;
 }
 
@@ -11,6 +10,10 @@ body {
     background-size: cover; /* Makes the gradient cover the entire screen */
     background-repeat: no-repeat; /* Prevents the gradient from repeating */
     background-attachment: fixed; /* Keeps the gradient fixed while scrolling */
+}
+
+a {
+    color: black;
 }
 
 @keyframes moveGradient1 {
@@ -26,9 +29,9 @@ body {
 }
 
 #title {
-    padding-top: 50px;
-    transform: scale(0.67)
-
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Bruno Ace SC", sans-serif;
 }
 
 #title-container {
@@ -73,6 +76,10 @@ body {
     gap: 50px;
 }
 
+.project-card-link {
+    text-decoration: none;
+}
+
 #description {
     display: inline-block;
     /* padding: 50px; */
@@ -88,16 +95,58 @@ body {
     aspect-ratio: 1 / 1;
     border-radius: 50px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, color 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    color: black;
 }
 
-.project-card:hover {
-    transform: scale(1.05); 
+/* Background image layer */
+.project-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+/* Dim overlay layer */
+.project-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.62);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+/* Reveal both layers on hover */
+.project-card:hover::before,
+.project-card:hover::after {
+    opacity: 1;
+}
+
+/* Keep text above everything */
+.project-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+.project-card:hover .project-card-title,
+.project-card:hover .project-card-description {
+    color: #f8f2ff;
 }
 
 .project-card-container {
     padding: 40px;
     border-radius: 50px;
+    width: full;
+    height: full;
 }
 
 .project-card-title {
