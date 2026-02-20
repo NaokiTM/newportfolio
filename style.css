@@ -89,7 +89,7 @@ a {
 
 .link {
     font-weight: 500;
-}
+}   
 
 .project-card {
     aspect-ratio: 1 / 1;
@@ -99,8 +99,9 @@ a {
     overflow: hidden;
     position: relative;
     color: black;
+    display: flex;          /* add this */
+    flex-direction: column; /* add this */
 }
-
 /* Background image layer */
 .project-card::before {
     content: '';
@@ -144,9 +145,18 @@ a {
 
 .project-card-container {
     padding: 40px;
-    border-radius: 50px;
-    width: full;
-    height: full;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;          /* add this */
+    flex-direction: column; /* add this */
+    overflow: hidden;       /* add this */
+}
+
+.project-card-description-container {
+    flex: 1;                /* add this — takes up remaining space */
+    overflow-y: auto;
+    min-height: 0;          /* critical — allows flex child to shrink below content size */
 }
 
 .project-card-title {
@@ -161,7 +171,9 @@ a {
 .project-card-description {
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: small;
+    font-size: large;
+    overflow: hidden;
+
 }
 
 .sveltekit-label {
@@ -230,6 +242,22 @@ a {
 
 .threejs-label {
     background-color: darkcyan;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.html-label {
+    background-color: #ff8800;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.css-label {
+    background-color: #00c3ff;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 20px;
